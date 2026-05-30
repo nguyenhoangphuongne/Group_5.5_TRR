@@ -21,7 +21,7 @@ The optimization engine follows a robust, modular pipeline designed to evaluate 
 ### 2. Local Search Operators & Metaheuristics
 * **2-opt (First Improvement):** Executes rapid neighbor sweeps, immediately accepting and applying the first found edge-pair exchange $(u, v)$ that yields a negative delta path weight to ensure low execution latency.
 * **2-opt (Best Improvement):** Performs an exhaustive neighborhood exploration, screening all possible transformations per iteration to systematically select only the globally optimal edge-swap within that generation.
-* **Local Beam Search:** Evaluates $B$ multiple candidate states concurrently across generations. Incorporates a diversity gating mechanism via unique path distance filtration to prevent premature convergence onto identical local minima attrac-tor basins.
+* **Local Beam Search:** Evaluates $B$ multiple candidate states concurrently across generations. Incorporates a diversity gating mechanism via unique path distance filtration to prevent premature convergence onto identical local minima attractor basins.
 
 ---
 
